@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./Pass response.html" method="post">
+    <center><h1>TELANGANA STATE ROAD TRANSPORT CORPORATION<br>GENERAL BUS PASS APPLICATION</h1></center>
+
+    <fieldset>
+        <legend>
+            <h3>Applicant Details</h3>
+        </legend>
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required pattern="[a-zA-Z\d]+" maxlength="20"><br><br>
+
+            <label for="dob">Date of birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="age">Age As on :</label>
+            <input type="number" id="age" name="age">Year(s)
+            <input type="number" >Month(s)
+            <input type="number">Day(s)<br><br>
+
+            <label for="mno">Mobile No:</label>
+            <input type="tel" id="mno" name="mno" maxlength="10" required><br><br>
+
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="Photo" required><br><br>
+
+            <label for="fgn">Father's or Guardian's name:</label>
+            <input type="text" id="fgn" name="fgn" required pattern="[a-zA-Z\d]+"><br><br>
+
+            <label for="">Gender:</label>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label><br><br>
+
+            <label for="ad">Aadhaar No:</label>
+            <input type="text" id="ad" name="ad" pattern="[0-9]+"><br><br>
+
+            <label for="em">Email:</label>
+            <input type="email" id="em" name="em" required>
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend><h3>Residential Address Details</h3></legend>
+        <label for="AA">Applicant's Address:</label>
+        <textarea name="AA" id="AA" required pattern="[a-zA-Z\d\s :\.\-]"></textarea><br><br>
+
+        <label for="Ml">Mandal:</label>
+        <input type="" required placeholder="Hyderabad" pattern="[a-zA-Z]+"><br><br>
+
+        <label for="no">Pincode:</label>
+        <input type="text" name="no" required maxlength="6" pattern="[0-9]{6,6}"><br><br>
+
+        <label for="dt">District:</label>
+        <input type="text" name="dt" required placeholder="Hyderabad" pattern="[a-zA-Z]+"><br><br>
+
+        <label for="vg">Village:</label>
+        <input type="text" name="vg" required placeholder="Hyderabad" pattern="[a-zA-Z]+">
+    </fieldset>
+
+
+    <fieldset>
+        <legend><h3>Pass Type Details</h3></legend>
+        <label for="">City:</label>
+        <input type="text" required pattern="[a-zA-Z]+" placeholder="Hyderabad"><br><br>
+
+        <label for="">Pass Type:</label>
+        <input type="text" required placeholder="---Select---"><br><br>
+    </fieldset>
+
+
+    <fieldset>
+        <legend><h3>Mode of Payment & Pass Collection</h3></legend>
+        <label for="">Payment Mode:</label>
+        <input type="text" required placeholder="select Payment Mode"><br><br>
+
+        <label for="">Pass Delivery Mode:</label>
+        <input type="text" required placeholder="Select Pass Delivery Mode"><br><br>
+
+        <label for="">Center at which you want to Collect Pass:</label>
+        <input type="text" required placeholder="---Select---">
+    </fieldset><br>
+    <center><input type="submit"></center>
+    </form>
+    <a href="./login.html">Go back</a>
+</body>
+</html>
